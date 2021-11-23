@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBRE</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    
+</head>
+
+<body>
+    <div class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="">
+    </div>
+
+    <div class="botao-home">
+        <img src="{% static 'img/if.png' %}" alt=""><a href="{% url 'index' %}" style="text-decoration: none; color: white;">Inicio</a>
+    </div>
+    <div class="sobre-blog">
+        <p>Eu Mateus Saulo, juntamente com Breno César e Adrian Andrade, estamos construindo um projeto semelhante ao moodle,
+        mas bem simplificado, onde tem o objetivo de ajudar os professores e os alunos no formato de um site de envio de
+        atividades escolares. Nele, os professores poderão adicionar suas atividades, fazer devidas modificações e conceder
+        nota as atividades concluidas. Já os alunos, poderão enviar e cancelar o envio de suas atividades.</p><br>
+
+        <h3>Diagrama de Classe</h3>
+        <img src="{% static 'img/diagrama-de-classe.png' %}" width="700" alt=""><br>
+
+        <h3>Diagrama de Caso de uso</h3>
+        <img src="{% static 'img/diagrama-de-caso-de-uso.png' %}" width="700" alt="">
+    </div>
+
+</body>
+</html>
